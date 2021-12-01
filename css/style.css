@@ -21,6 +21,8 @@
 /* ................шрифты,  и reset........................................................... */
 
 
+
+
 p, h1, h2, h3, h4 ,h5 { margin: 0; }
 
 ul {
@@ -156,7 +158,6 @@ body {
 
 .page-header {
     border-bottom: 1px solid var(--border-card-color);
-    
 
 }
 
@@ -218,6 +219,13 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--background-page-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../image/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -449,6 +457,29 @@ body {
 }
 
 /* .....................footer........................................................... */
+
+
+.client-list {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.client-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-items:not(:last-child) {
+    margin-right: 30px;
+}
 
 .footer {
     padding-top: 60px;
