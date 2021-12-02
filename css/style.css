@@ -198,7 +198,15 @@ body {
     
 }
 
-.contact:not(:last-child) {margin-right: 50px;}
+.contact-item {
+margin-right: 10px;
+}
+.contact-item:nth-child(2) {
+    margin-right: 30px;
+}
+.contact-item:last-child {
+    margin-right: 0;
+}
 
 .link-contact {
     padding-top: 32px;
@@ -209,6 +217,11 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--main-text-color)
+    }
+
+    .contakt-icon {
+        width: 16px;
+        height: 12px;
     }
 
 
@@ -292,6 +305,25 @@ body {
     margin-right: 30px;
 }
 
+.features-thumb {
+    
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.features-icon {
+    margin: 25px 100px;
+    width: 70px;
+    height: 70px;
+    /* fill: var(--client-first-color); */
+}
+
+/* .features-icon:hover {
+    fill:var(--client-second-color);
+} */
 
 
 
@@ -396,6 +428,49 @@ body {
     text-align: center;
 }
 
+.position-thumb {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 206px;
+    height: 44px;
+    
+}
+
+.icons-position {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.icon-position {
+    
+}
+
+.social-link {
+    display:flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--client-first-color);
+    border-radius: 50%;
+    background-color: var(--third-text-color);
+}
+
+.social-link:hover {
+background-color:var(--client-second-color)
+}
+
+.social-icon {
+    
+    width: 20px;
+    
+    fill:currentColor
+}
+
+.social-icon:hover {
+    fill:var(--third-text-color)
+}
 
 /* ...................maine page-two........................................................... */
 
@@ -471,15 +546,23 @@ body {
     height: 92px;
     border: 1px solid var(--client-first-color);
     border-radius: 4px;
+    background-color:var(--third-text-color);
 }
 .client-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.client-logo{
+.client-logo {
     margin: 16px 32px;
-    
-    background-color: lightcoral;
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill:var(--client-first-color)
+}
+.clients-icon:hover {
+    fill:var(--client-second-color)
 }
 
 /* .....................footer........................................................... */
