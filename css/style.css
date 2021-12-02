@@ -15,6 +15,8 @@
     --background-team-color:#F5F4FA;
     --background-work-color:#E5E5E5;
     --border-card-color:#EEEEEE;
+    --client-first-color:#AFB1B8;
+    --client-second-color:#2196F3;
     }
 
 
@@ -291,6 +293,8 @@ body {
 }
 
 
+
+
 /* .....................maine-subtitle........................................................... */
 
 
@@ -456,30 +460,31 @@ body {
     color: var(--main-text-color)
 }
 
-/* .....................footer........................................................... */
-
-
 .client-list {
     display: flex;
-    justify-content: center;
-    
 }
 
-
-
-.client-items {
+.client-item {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--client-first-color);
     border-radius: 4px;
 }
-
-.client-items:not(:last-child) {
+.client-item:not(:last-child) {
     margin-right: 30px;
 }
+
+.client-logo{
+    margin: 16px 32px;
+    
+    background-color: lightcoral;
+}
+
+/* .....................footer........................................................... */
+
+
 
 .footer {
     padding-top: 60px;
