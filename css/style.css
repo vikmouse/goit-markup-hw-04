@@ -219,15 +219,15 @@ margin-right: 10px;
     color:var(--main-text-color)
 }
 
-.contakt-icon {
+.contact-icon {
     width: 16px;
     height: 12px;
-    fill:var(--client-first-color)
+    fill:currentColor;
 }
 
-.contakt-icon:hover,
-.contakt-icon:focus {
+.contact-icon:hover {
     fill: var(--client-second-color);
+    
 }
 
 
@@ -456,6 +456,7 @@ margin-right: 10px;
 .social-link {
     display:flex;
     justify-content: center;
+    
     width: 44px;
     height: 44px;
     color: var(--client-first-color);
@@ -463,20 +464,23 @@ margin-right: 10px;
     background-color: var(--third-text-color);
 }
 
-.social-link:hover {
-background-color:var(--client-second-color)
-}
 
 .social-icon {
     
     width: 20px;
-    
     fill:currentColor
+}
+
+.social-link:hover,
+.social-link:focus {
+background-color: var(--client-second-color);
+
 }
 
 .social-icon:hover,
 .social-icon:focus {
-    fill:var(--third-text-color)
+    fill:var(--third-text-color);
+    
 }
 
 /* ...................maine page-two........................................................... */
@@ -507,7 +511,7 @@ background-color:var(--client-second-color)
 
 .gallery-item:hover,
 .gallery-item:focus{
-    
+
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -618,21 +622,6 @@ background-color:var(--client-second-color)
 
 }
 
-.footer-social-thumb {
-    margin-left: 70px;
-}
-
-.social-accession {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--third-text-color);
-}
-.social-footer {
-    display: flex;
-    margin-top: 20px;
-}
 
 
 .footer-list .item:not(:last-child) {
@@ -654,6 +643,22 @@ background-color:var(--client-second-color)
     font-size: 14px;
     line-height: 1.71;
     color:var(--second-text-color)
+}
+
+.footer-social-thumb {
+    margin-left: 70px;
+}
+
+.social-accession {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+}
+.social-footer {
+    display: flex;
+    margin-top: 20px;
 }
 
 .social-item:not(:last-child) {
