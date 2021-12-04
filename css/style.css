@@ -194,18 +194,13 @@ body {
 
 .list-contacts {
     display: flex;
+    align-items: center;
     margin-left: auto;
     
 }
 
-.contact-item {
-margin-right: 10px;
-}
-.contact-item:nth-child(2) {
+.contact-item:not(:last-child) {
     margin-right: 30px;
-}
-.contact-item:last-child {
-    margin-right: 0;
 }
 
 .link-contact {
@@ -220,15 +215,13 @@ margin-right: 10px;
 }
 
 .contact-icon {
+    margin-right: 10px;
     width: 16px;
     height: 12px;
     fill:currentColor;
 }
 
-/* .contact-icon:hover {
-    fill: var(--client-second-color);
-    
-} */
+
 
 
 /* ...................page one hero........................................................... */
@@ -677,7 +670,7 @@ background-color: var(--client-second-color);
     height: 44px;
     color:var(--third-text-color);
     border-radius: 50%;
-    background-color: var(--main-text-color);
+    background-color:  rgba(255, 255, 255, 0.1);;
 }
 
 .social-footer-link:hover,
