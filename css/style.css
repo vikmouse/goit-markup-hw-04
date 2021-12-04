@@ -225,10 +225,10 @@ margin-right: 10px;
     fill:currentColor;
 }
 
-.contact-icon:hover {
+/* .contact-icon:hover {
     fill: var(--client-second-color);
     
-}
+} */
 
 
 /* ...................page one hero........................................................... */
@@ -445,6 +445,7 @@ margin-right: 10px;
 
 .icons-position {
     display: flex;
+    color:var(--client-first-color)
     
     
 }
@@ -459,7 +460,7 @@ margin-right: 10px;
     
     width: 44px;
     height: 44px;
-    color: var(--client-first-color);
+    fill: var(--client-first-color);
     border-radius: 50%;
     background-color: var(--third-text-color);
 }
@@ -473,15 +474,16 @@ margin-right: 10px;
 
 .social-link:hover,
 .social-link:focus {
+    color: var(--third-text-color);
 background-color: var(--client-second-color);
 
 }
 
-.social-icon:hover,
+/* .social-icon:hover,
 .social-icon:focus {
     fill:var(--third-text-color);
     
-}
+} */
 
 /* ...................maine page-two........................................................... */
 
@@ -565,12 +567,7 @@ background-color: var(--client-second-color);
     display: flex;
     
     align-items: center;
-    color:var(--client-first-color) ;
-    width: 170px;
-    height: 92px;
-    border: 1px solid currentColor;
-    border-radius: 4px;
-    background-color:var(--third-text-color);
+    
 }
 
 .client-item:hover,
@@ -584,16 +581,24 @@ background-color: var(--client-second-color);
 
 .client-logo {
     padding: 16px 32px;
+    color:var(--client-first-color) ;
+    width: 170px;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    background-color:var(--third-text-color);
+    
 }
 
 .clients-icon {
     width: 106px;
     height: 60px;
-    fill:var(--client-first-color)
+    fill:currentColor
 }
-.clients-icon:hover,
-.clients-icon:focus {
-    fill:var(--client-second-color)
+
+.client-logo:hover,
+.client-logo:focus {
+    color:var(--client-second-color)
 }
 
 /* .....................footer........................................................... */
@@ -672,7 +677,7 @@ background-color: var(--client-second-color);
     height: 44px;
     color:var(--third-text-color);
     border-radius: 50%;
-    background-color: var(--second-text-color);
+    background-color: var(--main-text-color);
 }
 
 .social-footer-link:hover,
